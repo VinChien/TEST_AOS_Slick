@@ -37,13 +37,12 @@ nav {
         text-decoration: none;
         color: $color-white;
         font-weight: bold;
-        padding: 0 30px;
-        text-align: center;
+        padding-left: 5px;
     }
     a:hover {
         color: $color-lightblue;
-        transition: 0.5s;
-        border-bottom: 5px solid $color-lightblue;
+        transition: 0.3s;
+        border-left: 5px solid $color-lightblue;
     }
 }
 

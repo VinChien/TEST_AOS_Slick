@@ -39,15 +39,14 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-  padding: 0 30px;
-  text-align: center;
+  padding-left: 5px;
 }
 
 nav a:hover {
   color: #2ed5ff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-bottom: 5px solid #2ed5ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-left: 5px solid #2ed5ff;
 }
 
 .banner img {
