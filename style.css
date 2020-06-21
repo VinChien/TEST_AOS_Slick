@@ -15,8 +15,8 @@ body {
 nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 65% 5% 5% 5%;
-      grid-template-columns: 20% 65% 5% 5% 5%;
+  -ms-grid-columns: 20% 60% 5% 5% 5%;
+      grid-template-columns: 20% 60% 5% 5% 5%;
   padding: 30px 5px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -32,18 +32,22 @@ nav .logo {
   color: #ffffff;
   font-size: 26px;
   font-weight: bold;
+  padding-left: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
+  padding: 0 30px;
+  text-align: center;
 }
 
 nav a:hover {
   color: #2ed5ff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-bottom: 5px solid #2ed5ff;
 }
 
 .banner img {

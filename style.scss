@@ -17,7 +17,7 @@ body {
 
 nav {
     display: grid;
-    grid-template-columns: 20% 65% 5% 5% 5%;
+    grid-template-columns: 20% 60% 5% 5% 5%;
     padding: 30px 5px;
     align-items: baseline;
     position: fixed;
@@ -30,16 +30,20 @@ nav {
         color: $color-white;
         font-size: 26px;
         font-weight: bold;
+        padding-left: 20px;
     }
 
     a {
         text-decoration: none;
         color: $color-white;
         font-weight: bold;
+        padding: 0 30px;
+        text-align: center;
     }
     a:hover {
         color: $color-lightblue;
         transition: 0.5s;
+        border-bottom: 5px solid $color-lightblue;
     }
 }
 
