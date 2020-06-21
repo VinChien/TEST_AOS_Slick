@@ -40,9 +40,72 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: #2ed5ff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .banner img {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.about img {
+  width: 100%;
+}
+
+.product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+      grid-template-areas: "text pic";
+}
+
+.product img {
+  width: 100%;
+}
+
+.product *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+.product *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.product .content {
+  text-align: right;
+}
+
+.brand {
+  margin: 0 auto;
+  width: 25%;
+}
+
+.brand img {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  margin: 100px 0;
+  padding: 20px 0;
+  color: #00000033;
 }
 /*# sourceMappingURL=style.css.map */

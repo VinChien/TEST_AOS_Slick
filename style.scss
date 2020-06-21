@@ -1,6 +1,7 @@
 $color-black: #252525;
 $color-black-33: #00000033;
 $color-white:#ffffff;
+$color-lightblue:#2ed5ff;
 
 * {
     margin: 0;
@@ -36,6 +37,10 @@ nav {
         color: $color-white;
         font-weight: bold;
     }
+    a:hover {
+        color: $color-lightblue;
+        transition: 0.5s;
+    }
 }
 
 .banner {
@@ -43,4 +48,50 @@ nav {
         height: 100vh;
         object-fit: cover;
     }
+}
+
+@mixin section-box {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.about {
+    @include section-box();
+}
+
+.product {
+    @include section-box();
+
+    *:nth-child(1){
+        grid-area: pic;
+    }
+    *:nth-child(2){
+        grid-area: text;
+    }
+    grid-template-areas: "text pic";
+
+    .content { 
+      text-align: right;  
+    }
+    
+}
+
+.brand {
+    margin: 0 auto;
+    width: 25%;
+    img {
+        padding: 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 100px 0;
+    padding: 20px 0;
+    color: $color-black-33;
 }
