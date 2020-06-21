@@ -1,4 +1,6 @@
 $color-black: #252525;
+$color-black-33: #00000033;
+$color-white:#ffffff;
 
 * {
     margin: 0;
@@ -7,18 +9,38 @@ $color-black: #252525;
     font-family: 微軟正黑體;
 }
 
+body {
+    background-image: url(./images/bg-tiles.jpg);
+    background-size: 200px;
+}
+
 nav {
     display: grid;
-    grid-template-columns: 20% 50% 10% 10% 10%;
+    grid-template-columns: 20% 65% 5% 5% 5%;
     padding: 30px 5px;
+    align-items: baseline;
+    position: fixed;
+    z-index: 1;
+    background: #00000036;
+    width: 100vw;
+    border-bottom: 2px solid $color-black-33;
 
     .logo {
-        color: $color-black;
+        color: $color-white;
         font-size: 26px;
+        font-weight: bold;
     }
 
     a {
         text-decoration: none;
-        color: $color-black;
+        color: $color-white;
+        font-weight: bold;
+    }
+}
+
+.banner {
+    img {
+        height: 100vh;
+        object-fit: cover;
     }
 }
